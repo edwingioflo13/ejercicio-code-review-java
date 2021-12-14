@@ -1,5 +1,7 @@
 public class Utilitarios {
-    public int average(int params[]) {
+    
+    //Se esta usando español
+    public int calcularPromedio(int params[]) {
         int avg = 0;
         for (int i = 0; i < params.length; i++) {
             avg = avg + params[i];
@@ -7,7 +9,8 @@ public class Utilitarios {
         return avg / params.length;
     }
 
-    public double factorial(int numero) {
+    //Renombrar el metodo
+    public double calcularFactorial(int numero) {
         double resultado = 1;
         if (numero == 1 || numero == 0) {
             return resultado;
@@ -19,19 +22,22 @@ public class Utilitarios {
         return resultado;
     }
 
-    public double areaCirculo(double r) {
+    //Renombrar el metodo
+    public double calcularAreaCirculo(double r) {
         final double PI = 22 / 7;
         return PI * (r * r);
     }
 
     //b = base ; h= altura
-    public double areaTriangulo(double b, double h) {
+    //Renombrar el metodo
+    public double calcularAreaTriangulo(double b, double h) {
         double resultado = 0d;
         resultado = (b * h) / 2;
         return resultado;
     }
 
-    public double calculoIva(double valor) {
+    //Renombrar el metodo
+    public double calcularIva(double valor) {
         final int IVA = 12;
         return (valor * IVA) / 100;
     }
